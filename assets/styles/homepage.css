@@ -1,0 +1,122 @@
+nav {
+  height: 15px;
+  width: 100%;
+  background-color: var(--dark_gray);
+}
+
+main {
+  width: 95%;
+  max-width: 900px;
+  margin: 20px auto;
+  min-height: calc(100dvh - 55px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+main .logoContainer img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+main .logoContainer h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--dark_gray);
+}
+
+main .imageContainer {
+  width: 100%;
+  height: 230px;
+  /* background-image: url("../Computer\ image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main .imageContainer img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+main .imageCaptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .imageCaptions .contentContainer {
+  border-radius: 20px;
+  background-color: var(--background_offset);
+  padding: 25px;
+  width: calc(100% / 2.1);
+}
+main .imageCaptions .contentContainer h2 {
+  font-size: 32px;
+  color: black;
+  margin-bottom: 10px;
+}
+main .imageCaptions .contentContainer p {
+  color: black;
+  font-size: 18px;
+  line-height: 26px;
+}
+main .imageCaptions .exampleContainer {
+  border-radius: 20px;
+  width: calc(100% / 2.1);
+  overflow: hidden;
+}
+main .imageCaptions .exampleContainer h2 {
+  font-size: 32px;
+  color: black;
+  margin-bottom: 10px;
+}
+main .imageCaptions .exampleContainer .header {
+  padding: 20px 20px 20px 20px;
+  background-color: var(--background_offset);
+}
+
+main .imageCaptions .exampleContainer .offset {
+  height: calc(100% - 114px);
+  background-color: var(--dark_gray);
+}
+main .imageCaptions .exampleContainer .offset code {
+  padding: 20px;
+  display: flex;
+  height: 100%;
+  color: white;
+  line-height: 26px;
+  align-items: center;
+}
+.exampleP {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  main .imageCaptions {
+    flex-direction: column;
+  }
+  main .imageCaptions .contentContainer {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  main .imageCaptions .exampleContainer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .logoContainer h1 {
+    font-size: 36px;
+  }
+}
