@@ -3,7 +3,7 @@
 :root {
   --dark_gray: #424242;
   --background_offset: #e9eaec;
-  --interFont: "Inter", sans-serif;
+  --interFont: Helvetica, "Inter", sans-serif;
 }
 
 * {
